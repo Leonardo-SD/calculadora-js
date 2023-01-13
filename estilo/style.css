@@ -12,7 +12,7 @@ body {
 .calculator {
     width: 400px;
     margin: 0 auto;
-    background-color: #fbab18;
+    background-color: #000000;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 15px black;
@@ -25,7 +25,7 @@ body {
     height: 100px;
     margin-bottom: 20px;
     padding: 15px;
-    background-color: black;
+    background-color: rgba(34, 34, 34, 0.499);
     color: white;
     font: normal 4rem serif;
     overflow: hidden;
@@ -39,16 +39,28 @@ body {
 }
 
 .calculator button {
-    background-color: black;
+    background-color: rgb(37, 37, 37);
     color: white;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 45%;
     font-size: 1.5em;
     outline: none;
     cursor: pointer;
 }
+#limparDisplay, #limparCalculo {
+    color: rgb(253, 88, 33);
+}
+
+#igual {
+    background-color: rgb(8, 93, 8);
+}
+
+#operadores {
+    color: rgb(8, 93, 8);
+    font-size: 2em;
+}
 
 button:hover {
-    background-color: #fbab18;
-    color: black;
+    background-color: #29292996;
+    color: rgb(255, 255, 255);
 }
