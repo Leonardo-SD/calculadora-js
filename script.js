@@ -16,7 +16,7 @@ function calculadora() {
     }
 
     function teclaClicada() {
-        document.addEventListener('keypress', e => {
+        document.addEventListener('keyup', e => {
             const tecla = e.key;
             if (tecla == 0) inserirNumero(tecla);
             if (tecla == 1) inserirNumero(tecla);
@@ -37,7 +37,9 @@ function calculadora() {
             if (tecla == '(') inserirNumero(tecla);
             if (tecla == ')') inserirNumero(tecla);
             if (tecla == 'c') limparDisplay();
+            if (tecla == 'Escape') limparDisplay();
             if (tecla == '=') realizaConta();
+            if (tecla == 'Backspace') apagarUm();
         })
     }
 
